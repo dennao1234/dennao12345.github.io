@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" 
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>
+		Ligando o Corno do Gustavo
+	</title>
+	<link 	rel="icon" 
+			type="image/png"
+			href="img/favicon.png">
+	<!-- CSS Bootstrap -->
+	<link rel="stylesheet" 
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<style type = "text/css">
+		.resposta{
+			margin: 20px;
+			padding: 5px;
+			text-align: center;
+		}
+		.correta{
+			background-color: lightgreen;
+			border: 2px dotted green;
+			outline: 2px dashed darkgreen;
+			color: blue;
+		}
+		.errada{
+			background-color: yellow;
+			border: 2px dotted orange;
+			outline: 2px dashed red;
+			color: red;9
+		}
+
+	</style>
+
+</head>
+<body>
+	<header 
+		class="jumbotron text-center" 
+		style="
+			background-color: pink;
+			color: black;">
+		<!-- https://developers.google.com/web/tools/chrome-devtools/javascript/?hl=pt-br -->
+		<h1>
+			Ligando o Corno do Gustavo
+			<img src="img/gustavo.png" alt="Imagem da Terra" title="Fumante" class="fumante">
+		</h1>
+		<h2>
+			Ferramenta do Desenvolvedor
+		</h2>
+	</header>
+
+	<main class="container">
+	
+		<div class="form-group">
+		  <label for="num1">
+		  	Velocidade do Vitão Cortando:
+		  </label>
+		  <input type="number" 
+		  	class="form-control" id="num1" 
+		  	autofocus tabindex="1">
+		</div>
+
+		<div class="form-group">
+		  <label for="num2">Diâmetro:</label>
+		  <input type="number" 
+		  	class="form-control" id="num2" 
+		  	tabindex="2"> 
+		</div>
+
+		<button class="btn btn-info" id="btnSomar" tabindex="3">	
+			Calculo do Torno
+		</button>
+
+		<p class="resposta"></p>
+
+	</main>
+
+	<script src="js/debugger.js"></script>
+</body>
+</html>
